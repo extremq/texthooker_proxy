@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=80"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "texthooker_proxy"
+version = "0.1.0"
+description = "Add your description here"
+authors = [{name = "extremq", email = "contact@extremq.com"}]
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "websockets>=15.0.1",
+]
+
+[project.scripts]
+texthooker_proxy = "texthooker_proxy.server:main"
