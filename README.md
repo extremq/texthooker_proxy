@@ -26,6 +26,9 @@ click on "Console" and you can paste the code.
 ## Nostalgic Visual Novels on-line
 For [tss.asenheim.org](https://tss.asenheim.org/):
 ```js
+// makes text selectable (on chrome)
+document.querySelector('#text_container').setAttribute('unselectable', 'off');
+
 // Open WebSocket connection to your proxy server. 
 // This address should match the proxy's
 const socket = new WebSocket('ws://localhost:6677');
